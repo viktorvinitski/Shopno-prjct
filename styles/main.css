@@ -1,5 +1,6 @@
 body{
   width: 100%;
+  font-size: 16px;
 }
 
 .wrapper {
@@ -91,6 +92,10 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.main_bottom button:hover{
+  background-color: #6df6ebf1;
+  transition: .3s;
 }
 .main_bottom div{
   width: 100%;

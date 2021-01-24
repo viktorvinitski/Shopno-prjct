@@ -79,15 +79,15 @@
     transition: .3s;
     cursor: pointer;
 }
-/* .services_card-sm1 img,
-.services_card-sm2 img,
-.services_card-sm3 img,
-.services_card-lg1 img,
-.services_card-lg2 img,
-.services_card-lg3 img{
-    width: 100%;
-    height: 100%;
-} */
+.services_card-sm1,
+.services_card-sm2,
+.services_card-sm3,
+.services_card-lg1,
+.services_card-lg2,
+.services_card-lg3{
+    height: auto;
+    position: relative;
+}
 
 .card_desc-more{
     position: absolute;
@@ -143,4 +143,32 @@
     opacity: .9;
     display: flex;
     align-items: center;
+}
+
+
+
+
+
+.more_info{
+    width: 100%;
+    height: 100%;
+    background-color: #6df6ebf1;
+    position: absolute;
+    z-index: 3;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    display: none;
+}
+.more_info-name{
+    opacity: 0.74;
+    font-family: Raleway;
+    font-size: 1em;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #000000;
 }

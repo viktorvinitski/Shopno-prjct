@@ -205,8 +205,16 @@
         grid-template-rows: 220px 220px 220px;
     }
     .team_content {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 240px 240px 240px;
+        display: flex;
+        flex-direction: column;
+    }
+    .team_content-pic1,
+    .team_content-pic2,
+    .team_content-pic3,
+    .team_content-pic4,
+    .team_content-pic5,
+    .team_content-pic6{
+        height: 340px;
     }
     .carousel_under{
         width: 290px;
@@ -258,6 +266,12 @@
     .services_content,
     .team_content-wrapper{
         margin-top: 30px;
+    }
+    .team{
+        height: auto;
+    }
+    .team_content-wrapper{
+        height: auto;
     }
     .featured_content {
         grid-template-rows: 150px 150px 150px;

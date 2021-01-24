@@ -21,10 +21,28 @@
     <link rel="stylesheet" href="./styles/adress.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" href="./styles/burger.css">
 </head>
 
 <body>
     <div class="wrapper">
+        <div id="burgerMenu" class="burger-menu">
+            <div class="close-button">
+                <button onclick="closeMenu()">
+                    <img src="./img/cross_button.png" alt="pic">
+                </button>
+            </div>
+            <div class="burger-links">
+                <a onclick="scrollToBlock('b1')" href="#!" class="burger-about">About us</a>
+                <a onclick="scrollToBlock('b2')" href="#!" class="burger-featured">Featured</a>
+                <a onclick="scrollToBlock('b3')" href="#!" class="burger-services">Services</a>
+                <a onclick="scrollToBlock('b4')" href="#!" class="burger-team">Our team</a>
+                <a onclick="scrollToBlock('b5')" href="#!" class="burger-reviews">Reviews</a>
+                <a onclick="scrollToBlock('b6')" href="#!" class="burger-clients">Clients</a>
+                <a onclick="scrollToBlock('b7')" href="#!" class="burger-adress">Adress</a>
+            </div>
+        </div>
+
         <section class="main">
             <div class="main_top">
                 <header class="header">
@@ -32,7 +50,7 @@
                         Sh<span>o</span>pno
                     </a>
                     <div class="burger">
-                        <button class="burger_button">
+                        <button onclick="openMenu()" class="burger_button">
                             <img src="./img/burger_button.png" alt="pic">
                         </button>
                     </div>
@@ -50,7 +68,7 @@
             </div>
         </section>
 
-        <section class="about_us">
+        <section id="b1" class="about_us">
             <div class="about_us-heading">
                 <div class="about_us-name">About us</div>
                 <div class="about_us-desc">Lorem ipsum dolor sit amet event landing template</div>
@@ -92,7 +110,7 @@
                 </div>
         </section>
 
-        <section class="featured_works">
+        <section id="b2" class="featured_works">
             <div class="featured_works-heading">
                 <div class="featured_works-name">Featured works</div>
                 <div class="featured_works-desc">Lorem ipsum dolor sit amet event landing template</div>
@@ -110,7 +128,7 @@
             </div>
         </section>
 
-        <section class="services">
+        <section id="b3" class="services">
             <div class="services-heading">
                 <div class="services-name">our services</div>
                 <div class="services-desc">Lorem ipsum dolor sit amet event landing template</div>
@@ -118,66 +136,114 @@
 
             <div class="services_content">
                 <div class="services_card-lg1">
+                    <div id='moreInfo1' class="more_info">
+                        <div class="more_info-name">Designing is The CooL LOVE FOR.</div>
+                        <div class="more_info-text">Our most popular service is our Virtual Receptionist. We know that sometimes it’s </div>
+                        <button onclick="closeMoreInfo(1)">
+                            <img src="./img/cross2.png" alt="pic">
+                        </button>
+                    </div>
+
                     <div class="card_desc-more">
                         <div class="card_name">cool psd Design</div>
                         <div class="card_desc">
                             Our most popular service is our we know that sometimes it’s something and you middle most..
                         </div>
                         <div class="card_button">
-                            <button>KNOW MORE</button>
+                            <button onclick="openMoreInfo(1)" >KNOW MORE</button>
                             <img src="./img/arrow_pic.png" alt="pic">
                         </div>
                     </div>
                 </div>
                 <div class="services_card-sm1">
+                    <div id='moreInfo2' class="more_info">
+                        <div class="more_info-name">Designing is The CooL LOVE FOR.</div>
+                        <div class="more_info-text">Our most popular service is our Virtual Receptionist. We know that sometimes it’s </div>
+                        <button onclick="closeMoreInfo(2)">
+                            <img src="./img/cross2.png" alt="pic">
+                        </button>
+                    </div>
+
                     <div class="card_desc-more">
                         <div class="card_name">Designing is The Cool</div>
                         <div class="card_desc">
                             Our most popular service is our Virtual Receptionist. We know that ...
                         </div>
                         <div class="card_button">
-                            <button>KNOW MORE</button>
+                            <button onclick="openMoreInfo(2)">KNOW MORE</button>
                             <img src="./img/arrow_pic.png" alt="pic">
                         </div>
                     </div>
                 </div>
                 <div class="services_card-lg2">
+                    <div id='moreInfo3' class="more_info">
+                        <div class="more_info-name">Designing is The CooL LOVE FOR.</div>
+                        <div class="more_info-text">Our most popular service is our Virtual Receptionist. We know that sometimes it’s </div>
+                        <button onclick="closeMoreInfo(3)">
+                            <img src="./img/cross2.png" alt="pic">
+                        </button>
+                    </div>
+
                     <div class="card_desc-more">
                         <div class="card_name">PSD TO HTML KORI</div>
                         <div class="card_desc">
                             We know that sometimes it’s something and you middle most..
                         </div>
                         <div class="card_button">
-                            <button>KNOW MORE</button>
+                            <button onclick="openMoreInfo(3)">KNOW MORE</button>
                             <img src="./img/arrow_pic.png" alt="pic">
                         </div>
                     </div>
                 </div>
                 <div class="services_card-sm2">
+                    <div id='moreInfo4' class="more_info">
+                        <div class="more_info-name">Designing is The CooL LOVE FOR.</div>
+                        <div class="more_info-text">Our most popular service is our Virtual Receptionist. We know that sometimes it’s </div>
+                        <button onclick="closeMoreInfo(4)">
+                            <img src="./img/cross2.png" alt="pic">
+                        </button>
+                    </div>
+
                     <div class="card_desc-more">
                         <div class="card_name">cool psd Design</div>
                         <div class="card_desc">
                             Our most popular service is our new virtual Receptionist you middle most..
                         </div>
                         <div class="card_button">
-                            <button>KNOW MORE</button>
+                            <button onclick="openMoreInfo(4)">KNOW MORE</button>
                             <img src="./img/arrow_pic.png" alt="pic">
                         </div>
                     </div>
                 </div>
                 <div class="services_card-sm3">
+                    <div id='moreInfo5' class="more_info">
+                        <div class="more_info-name">Designing is The CooL LOVE FOR.</div>
+                        <div class="more_info-text">Our most popular service is our Virtual Receptionist. We know that sometimes it’s </div>
+                        <button onclick="closeMoreInfo(5)">
+                            <img src="./img/cross2.png" alt="pic">
+                        </button>
+                    </div>
+
                     <div class="card_desc-more">
                         <div class="card_name">cool psd Design</div>
                         <div class="card_desc">
                             Our most popular service is our we know that sometimes it’s something and you middle most..
                         </div>
                         <div class="card_button">
-                            <button>KNOW MORE</button>
+                            <button onclick="openMoreInfo(5)">KNOW MORE</button>
                             <img src="./img/arrow_pic.png" alt="pic">
                         </div>
                     </div>
                 </div>
                 <div class="services_card-lg3">
+                    <div id='moreInfo6' class="more_info">
+                        <div class="more_info-name">Designing is The CooL LOVE FOR.</div>
+                        <div class="more_info-text">Our most popular service is our Virtual Receptionist. We know that sometimes it’s </div>
+                        <button onclick="closeMoreInfo(6)">
+                            <img src="./img/cross2.png" alt="pic">
+                        </button>
+                    </div>
+
                     <div class="card_desc-more">
                         <div class="card_name">Designing is The Cool FOR</div>
                         <div class="card_desc">
@@ -185,7 +251,7 @@
                             and you middle most..
                         </div>
                         <div class="card_button">
-                            <button>KNOW MORE</button>
+                            <button onclick="openMoreInfo(6)">KNOW MORE</button>
                             <img src="./img/arrow_pic.png" alt="pic">
                         </div>
                     </div>
@@ -195,7 +261,7 @@
 
         </section>
 
-        <section class="team">
+        <section id="b4" class="team">
             <div class="team-heading">
                 <div class="team-name">small team</div>
                 <div class="team-desc">Lorem ipsum dolor sit amet event landing template</div>
@@ -203,19 +269,187 @@
 
             <div class="team_content-wrapper">
                 <div class="team_content">
-                    <div class="team_content-pic1"></div>
-                    <div class="team_content-pic2"></div>
-                    <div class="team_content-pic3"></div>
-                    <div class="team_content-pic4"></div>
-                    <div class="team_content-pic5"></div>
-                    <div class="team_content-pic6"></div>
+                    <div class="team_content-pic1">
+                        <div id="teamInfo1" class="team_info1">
+                            <div class="triangle"></div>
+                            <div class="team_info-name">AL RAYHAN <span> / UI Designer; </span></div>
+                            <div class="team_info-phrase">Lorem Ipsum is not simply is an action designer random text
+                                It has roots in a piece.
+                            </div>
+                            <div class="team_info-links">
+                                <div>
+                                    <a href="#!">
+                                        <img src="./img/team_facebook.png" alt="pic">
+                                    </a>
+                                    <a href="#!">
+                                        <img src="./img/team_twitter.png" alt="pic">
+                                    </a>
+                                    <a href="#!">
+                                        <img src="./img/team_dribble.png" alt="pic">
+                                    </a>
+                                    <a href="#!">
+                                        <img src="./img/team_mail.png" alt="pic">
+                                    </a>
+                                </div>
+                                <button onclick="closeTeamInfo(1)">
+                                    <img src="./img/cross2.png" alt="pic">
+                                </button>
+                            </div>
+                        </div>
+                        <button onclick="openTeamInfo(1)">About</button>
+                    </div>
+                    <div class="team_content-pic2">
+                        <div id="teamInfo2" class="team_info2">
+                            <div class="triangle"></div>
+                            <div class="team_info-name">AL RAYHAN <span> / UI Designer; </span></div>
+                            <div class="team_info-phrase">Lorem Ipsum is not simply is an action designer random text
+                                It has roots in a piece.
+                            </div>
+                            <div class="team_info-links">
+                                <div>
+                                    <a href="#!">
+                                        <img src="./img/team_facebook.png" alt="pic">
+                                    </a>
+                                    <a href="#!">
+                                        <img src="./img/team_twitter.png" alt="pic">
+                                    </a>
+                                    <a href="#!">
+                                        <img src="./img/team_dribble.png" alt="pic">
+                                    </a>
+                                    <a href="#!">
+                                        <img src="./img/team_mail.png" alt="pic">
+                                    </a>
+                                </div>
+                                <button onclick="closeTeamInfo(2)">
+                                    <img src="./img/cross2.png" alt="pic">
+                                </button>
+                            </div>
+                        </div>
+                        <button onclick="openTeamInfo(2)">About</button>
+                    </div>
+                    <div class="team_content-pic3">
+                        <div id="teamInfo3" class="team_info3">
+                            <div class="triangle"></div>
+                            <div class="team_info-name">AL RAYHAN <span> / UI Designer; </span></div>
+                            <div class="team_info-phrase">Lorem Ipsum is not simply is an action designer random text
+                                It has roots in a piece.
+                            </div>
+                            <div class="team_info-links">
+                                <div>
+                                    <a href="#!">
+                                        <img src="./img/team_facebook.png" alt="pic">
+                                    </a>
+                                    <a href="#!">
+                                        <img src="./img/team_twitter.png" alt="pic">
+                                    </a>
+                                    <a href="#!">
+                                        <img src="./img/team_dribble.png" alt="pic">
+                                    </a>
+                                    <a href="#!">
+                                        <img src="./img/team_mail.png" alt="pic">
+                                    </a>
+                                </div>
+                                <button onclick="closeTeamInfo(3)">
+                                    <img src="./img/cross2.png" alt="pic">
+                                </button>
+                            </div>
+                        </div>
+                        <button onclick="openTeamInfo(3)">About</button>
+                    </div>
+                    <div class="team_content-pic4">
+                        <div id="teamInfo4" class="team_info4">
+                            <div class="triangle"></div>
+                            <div class="team_info-name">AL RAYHAN <span> / UI Designer; </span></div>
+                            <div class="team_info-phrase">Lorem Ipsum is not simply is an action designer random text
+                                It has roots in a piece.
+                            </div>
+                            <div class="team_info-links">
+                                <div>
+                                    <a href="#!">
+                                        <img src="./img/team_facebook.png" alt="pic">
+                                    </a>
+                                    <a href="#!">
+                                        <img src="./img/team_twitter.png" alt="pic">
+                                    </a>
+                                    <a href="#!">
+                                        <img src="./img/team_dribble.png" alt="pic">
+                                    </a>
+                                    <a href="#!">
+                                        <img src="./img/team_mail.png" alt="pic">
+                                    </a>
+                                </div>
+                                <button onclick="closeTeamInfo(4)">
+                                    <img src="./img/cross2.png" alt="pic">
+                                </button>
+                            </div>
+                        </div>
+                        <button onclick="openTeamInfo(4)">About</button>
+                    </div>
+                    <div class="team_content-pic5">
+                        <div id="teamInfo5" class="team_info5">
+                            <div class="triangle"></div>
+                            <div class="team_info-name">AL RAYHAN <span> / UI Designer; </span></div>
+                            <div class="team_info-phrase">Lorem Ipsum is not simply is an action designer random text
+                                It has roots in a piece.
+                            </div>
+                            <div class="team_info-links">
+                                <div>
+                                    <a href="#!">
+                                        <img src="./img/team_facebook.png" alt="pic">
+                                    </a>
+                                    <a href="#!">
+                                        <img src="./img/team_twitter.png" alt="pic">
+                                    </a>
+                                    <a href="#!">
+                                        <img src="./img/team_dribble.png" alt="pic">
+                                    </a>
+                                    <a href="#!">
+                                        <img src="./img/team_mail.png" alt="pic">
+                                    </a>
+                                </div>
+                                <button onclick="closeTeamInfo(5)">
+                                    <img src="./img/cross2.png" alt="pic">
+                                </button>
+                            </div>
+                        </div>
+                        <button onclick="openTeamInfo(5)">About</button>
+                    </div>
+                    <div class="team_content-pic6">
+                        <div id="teamInfo6" class="team_info6">
+                            <div class="triangle"></div>
+                            <div class="team_info-name">AL RAYHAN <span> / UI Designer; </span></div>
+                            <div class="team_info-phrase">Lorem Ipsum is not simply is an action designer random text
+                                It has roots in a piece.
+                            </div>
+                            <div class="team_info-links">
+                                <div>
+                                    <a href="#!">
+                                        <img src="./img/team_facebook.png" alt="pic">
+                                    </a>
+                                    <a href="#!">
+                                        <img src="./img/team_twitter.png" alt="pic">
+                                    </a>
+                                    <a href="#!">
+                                        <img src="./img/team_dribble.png" alt="pic">
+                                    </a>
+                                    <a href="#!">
+                                        <img src="./img/team_mail.png" alt="pic">
+                                    </a>
+                                </div>
+                                <button onclick="closeTeamInfo(6)">
+                                    <img src="./img/cross2.png" alt="pic">
+                                </button>
+                            </div>
+                        </div>
+                        <button onclick="openTeamInfo(6)">About</button>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="say">
+        <section id="b5" class="say">
             <div class="say-heading">
-                <div class="say-name">small team</div>
+                <div class="say-name">what they says</div>
                 <div class="say-desc">Lorem ipsum dolor sit amet event landing template</div>
             </div>
 
@@ -280,11 +514,11 @@
             </div>
         </section>
 
-        <section class="clients">
+        <section id="b6" class="clients">
             <div class="logos"></div>
         </section>
 
-        <section class="adress">
+        <section id="b7"class="adress">
             <div class="adress_content">
                 <form class="form">
                     <div class="inputs">
@@ -349,7 +583,7 @@
     </div>
 
 
-
+    <script src="./js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
