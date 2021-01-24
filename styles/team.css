@@ -1,0 +1,74 @@
+.team{
+    padding: 120px 150px;
+    box-sizing: border-box;
+    background-color: #ffffff; 
+    /* display: none; */
+}
+.team-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team-name{
+    font-family: 'Montserrat';
+    font-size: 36px;
+    line-height: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+.team-desc{
+    font-family: 'Merriweather';
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-top: 15px;
+}
+.team_content-wrapper{
+    display: flex;
+    align-items: center;
+    margin-top: 120px;
+}
+.team_content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 440px 440px;
+    gap: 10px 10px;
+    width: 100%;
+}
+.team_content-pic1{
+    background: url(/img/team-block/team_pic1.png) no-repeat top;
+    background-size: cover;
+}
+.team_content-pic2{
+    background: url(/img/team-block/team_pic2.png) no-repeat top;
+    background-size: cover;
+}
+.team_content-pic3{
+    background: url(/img/team-block/team_pic3.png) no-repeat top;
+    background-size: cover;
+}
+.team_content-pic4{
+    background: url(/img/team-block/team_pic4.png) no-repeat top;
+    background-size: cover;
+}
+.team_content-pic5{
+    background: url(/img/team-block/team_pic5.png) no-repeat top;
+    background-size: cover;
+}
+.team_content-pic6{
+    background: url(/img/team-block/team_pic6.png) no-repeat top;
+    background-size: cover;
+}
+
+.team_content-pic1:hover,
+.team_content-pic2:hover,
+.team_content-pic3:hover,
+.team_content-pic4:hover,
+.team_content-pic5:hover,
+.team_content-pic6:hover{
+    cursor: pointer;
+    transform: scale(1.009);
+}

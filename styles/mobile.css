@@ -1,0 +1,281 @@
+@media screen and (max-width: 1300px){
+    .main_desc div{
+        font-size: 30px;
+    }
+    .about_desc h2{
+        font-size: 14px;
+    }
+    .about_desc div{
+        font-size: 12px;
+    }
+    .about_desc h3{
+        font-size: 11px;
+    }
+    .about_us{
+        padding: 65px 100px
+    }
+    .say_name{
+        font-size: 16px;
+    }
+    .say_phrase{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 1200px){
+    .what_say{
+        padding: 50px 40px 30px 40px;
+    }
+    .card_name {
+        font-size: 14px;
+    }
+    .card_desc {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 1080px){
+    .say_name{
+        font-size: 12px;
+    }
+    .say_phrase{
+        font-size: 10px;
+    }
+    .say_name span {
+        font-size: 12px;
+    }
+    .about_us{
+        height: auto;
+    }
+    .about_content{
+        flex-direction: column;
+    }
+    .about_content-pic{
+        margin: 0;
+    }
+    .main {
+        background-color: #eff0f2;
+        height: 100vh;
+        padding: 65px 100px;
+    }
+    .about_pic-item{
+        margin-top: 50px;
+        width: 70%;
+    }
+    .about_desc{
+        margin-top: 50px;
+        padding: 0;
+        margin-left: 0;
+    }
+    .featured_content-wrapper{
+        margin-top: 70px;
+    }
+    .featured_content{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 300px 300px 300px;
+    }
+    .services_content{
+        display: flex;
+        flex-direction: column;
+    }
+    .services_card-sm1,
+    .services_card-sm2,
+    .services_card-sm3,
+    .services_card-lg1,
+    .services_card-lg2,
+    .services_card-lg3{
+        width: 100%;
+        height: 200px;
+    }
+    .team_content{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 340px 340px 340px;
+    }
+    .say{
+        height: auto;
+    }
+    .say-content{
+        margin-top: 50px;
+    }
+    .say_info{
+        margin-left: 0;
+        margin-top: 80px;
+    }
+    .say_content-item{
+        flex-direction: column;
+    }
+    .carousel-indicators{
+        align-items: center;
+    }
+    .clients{
+        height: auto;
+        justify-content: center;
+    }
+    .logos{
+        width: 100%;
+        height: 200px;
+    }
+    .adress{
+        height: auto;
+    }
+    .adress_content{
+        height: auto;
+        flex-direction: column;
+    }
+    .form,
+    .map{
+        width: 80%;
+    }
+    .map{
+        margin-left: 0;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 890px){
+    .main_desc div{
+        font-size: 24px;
+    }
+    .featured_works,
+    .services,
+    .team,
+    .say,
+    .adress{
+        padding: 65px 100px;
+    }
+    .services_content,
+    .team_content-wrapper{
+        margin-top: 70px;
+    }
+}
+@media screen and (max-width: 760px){
+    .main,
+    .about_us,
+    .featured_works,
+    .services,
+    .team,
+    .say,
+    .clients,
+    .adress {
+        padding: 65px 40px
+    }
+}
+@media screen and (max-width: 640px){
+    .about_us-name,
+    .featured_works-name,
+    .services-name,
+    .team-name,
+    .say-name{
+        font-size: 26px;
+    }
+
+
+    .about_us-desc,
+    .featured_works-desc,
+    .services-desc,
+    .team-desc,
+    .say-desc{
+        font-size: 14px;
+        letter-spacing: 0.02em;
+        text-align: center;
+    }
+    .main_desc div {
+        text-align: center;
+    }
+    .form, .map {
+        width: 100%;
+    }
+    .main_bottom div {
+        margin-top: 20px;
+        justify-content: center;
+    }
+    .card_desc-more{
+        padding: 15px 45px 25px 25px;
+    }
+    .card_desc,
+    .card_button{
+        margin-top: 5px;
+    }
+}
+@media screen and (max-width: 540px){
+    .main{
+        padding: 35px 40px;
+    }
+    .main_bottom div {
+        display: none;
+    }
+    .featured_content {
+        grid-template-rows: 220px 220px 220px;
+    }
+    .team_content {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 240px 240px 240px;
+    }
+    .carousel_under{
+        width: 290px;
+        height: 260px;
+    }
+    .carousel_block {
+        width: 240px;
+        height: 118%;
+    }
+    .clients{
+        padding: 25px 40px 10px 40px;
+    }
+    .adress{
+        padding-top: 10px;
+    }
+}
+@media screen and (max-width: 440px){
+    .say_name{
+        text-align: center;
+    }
+    .say_phrase{
+        font-size: 9px;
+    }
+    .card_desc-more{
+        padding: 10px;
+    }
+    .card_name {
+        font-size: 12px;
+    }
+    .about_pic-item {
+        margin-top: 20px;
+        width: 70%;
+        height: 65%;
+    }
+    .about_desc{
+        margin-top: 20px;
+    }
+    .about_us,
+    .featured_works,
+    .team,
+    .services,
+    .say{
+        padding-top: 35px;
+    }
+    .featured_works-name{
+        text-align: center;
+    }
+    .featured_content-wrapper,
+    .services_content,
+    .team_content-wrapper{
+        margin-top: 30px;
+    }
+    .featured_content {
+        grid-template-rows: 150px 150px 150px;
+    }
+    .team_content{
+        grid-template-rows: 170px 170px 170px;
+    }
+    .copywrite{
+        font-size: 12px;
+    }
+    .contacts div {
+        font-size: 10px; 
+    }
+    
+}
+@media screen and (max-height: 670px){
+    br{
+        display: none;
+    }
+}
+    
