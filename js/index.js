@@ -7,7 +7,9 @@ const closeMenu = () => {
 }
 
 const scrollToBlock = (id) => {
-    document.getElementById(`${id}`).scrollIntoView();
+    document.getElementById(`${id}`).scrollIntoView({
+        behavior: 'smooth'
+    });
     document.getElementById('burgerMenu').style.display = 'none'
 }
 
